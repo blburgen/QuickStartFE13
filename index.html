@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/QuickStartFE13/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + TS</title>
+    <script type="module" crossorigin src="/QuickStartFE13/assets/index-CnwQESJt.js"></script>
+    <link rel="stylesheet" crossorigin href="/QuickStartFE13/assets/index-COn20UU0.css">
+  </head>
+  <body>
+    <!-- 
+    the following div is the navigation bar
+    container-fluid: provides the container to be 100% width
+    navbar: designates it to be formatted as a navbar
+    navbar-expand-md: expands when screen is medium or larger 
+    navbar-nav: full-height and lightweight navigation 
+    nav-link: Navigation link
+    data-bs-theme="dark": provides the navbar with light text
+    active: current page
+    d-flex: display flex
+    justify-content-evenly: justifies the links evenly across the navigation bar
+    text-center: centers the text
+    bg-primary: background color primary (blue)
+    text-light: text color light (white)
+    col-md-2: column when medium screen size or larger is 2/12
+    col-12: column is full screen width as default
+    border: gives the item a border
+    border-dark: the border color is dark (black)
+    rounded-3: rounds the ends of the border
+    -->
+    <div class="container-fluid navbar-expand-md ">
+      <nav class="navbar navbar-nav d-flex justify-content-evenly" data-bs-theme="dark">
+        <a class="text-center bg-primary nav-link col-md-2 col-12 border border-dark rounded-3 active" href=".\">Home Page Week 13</a>
+        <a class="text-center bg-primary nav-link col-md-2 col-12 border border-dark rounded-3" href="https://blburgen.github.io/">Home Page</a>
+        <a class="text-center bg-primary nav-link col-md-2 col-12 border border-dark rounded-3" href="https://blburgen.github.io/Projects/">Projects</a>
+        <ul class="navbar-nav col-md-3 col-12">
+          <li class="nav-item dropdown col-md text-center bg-primary border border-dark rounded-3">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><!--Create a dropdown button-->
+              Quick Start Front End <br>&dArr; Projects  &dArr;
+            </a>  
+            <ul class="dropdown-menu col-12">
+              <li><a class="nav-link bg-primary border border-dark rounded-3 text-center" href="https://blburgen.github.io/QuickStartProjects/">Quick Start Front End Projects Home</a></li>
+              <li><a class="nav-link bg-primary border border-dark rounded-3 text-center" href="https://blburgen.github.io/QuickStartFE01/">Quick Start Front End Week 01</a></li>
+              <li><a class="nav-link bg-primary border border-dark rounded-3 text-center" href="https://blburgen.github.io/QuickStartFE02/">Quick Start Front End Week 02</a></li>
+              <li><a class="nav-link bg-primary border border-dark rounded-3 text-center" href="https://blburgen.github.io/QuickStartFE03/">Quick Start Front End Week 03</a></li>
+              <li><a class="nav-link bg-primary border border-dark rounded-3 text-center" href="https://blburgen.github.io/QuickStartFE07/">Quick Start Front End Week 07</a></li>
+              <li><a class="nav-link bg-primary border border-dark rounded-3 text-center" href="https://blburgen.github.io/QuickStartFE08/">Quick Start Front End Week 08</a></li>
+              <li><a class="nav-link bg-primary border border-dark rounded-3 text-center" href="https://blburgen.github.io/QuickStartFE09/">Quick Start Front End Week 09</a></li>
+              <li><a class="nav-link bg-primary border border-dark rounded-3 text-center" href="https://blburgen.github.io/QuickStartFE10/">Quick Start Front End Week 10</a></li>
+              <li><a class="nav-link bg-primary border border-dark rounded-3 text-center" href="https://blburgen.github.io/QuickStartFE11/">Quick Start Front End Week 11</a></li>
+              <li><a class="nav-link bg-primary border border-dark rounded-3 text-center" href="https://blburgen.github.io/QuickStartFE12/">Quick Start Front End Week 12</a></li>
+              <li><a class="nav-link bg-primary border border-dark rounded-3 text-center active" href="https://blburgen.github.io/QuickStartFE13/">Quick Start Front End Week 13</a></li>
+              <li><a class="nav-link bg-primary border border-dark rounded-3 text-center" href="https://blburgen.github.io/QuickStartFE14/">Quick Start Front End Week 14-16</a></li>
+              <li><a class="nav-link bg-primary border border-dark rounded-3 text-center" href="https://blburgen.github.io/QuickStartFE16/">Quick Start Front End Week 16-18</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="container-fluid mt-4">
+      <h1 class="text-center">Quick Start Front End Week 13 Coding Assignment</h1>
+      <h2 class="text-center">
+        This project uses a local database.  <br>
+        To properly work a local json database on port 3005 must be running with a "state" table <br>
+        <a href=".\db.json" download>Download Sample json Database</a>
+      </h2>
+      <!-- form to add state to database -->
+      <form>
+        <label for="stateName">State Name To Add</label>
+        <input type="text" class="form-control" id="stateName">
+        <button class="btn btn-success mt-3" id="save-button">Save</button>
+      </form>
+      <hr class="my-3">
+      <h3 class="display-4">States</h3>
+      <div id="states-container" class="my-3 row"></div>
+      <hr class="my-3">
+    </div>
+  </body>
+</html>
