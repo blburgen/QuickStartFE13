@@ -1,6 +1,7 @@
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css"
 import "bootstrap"
 import { deleteState,postStates,fetchAllStates } from "./api"
+import "../db.json"
 
 export type StateType = {
     id: number
